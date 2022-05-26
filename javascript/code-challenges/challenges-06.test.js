@@ -23,6 +23,20 @@ Returns: ['dyoll', 'eimaj'];
 ------------------------------------------------------------------------------------------------ */
 
 const getNames = (arr) => {
+
+ 
+ let mapReverse = arr.map(element => {
+   return  element.name.split("").reverse().join("");
+   
+  });
+return mapReverse;
+}
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 2
+
+Write a function that appends ' The end.' to a string, and returns the modified string. 
+The original source string should not be modified.
+
   // Solution code here...
 };
 
@@ -31,16 +45,22 @@ CHALLENGE 2
 
 Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
 
+
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
-  // Solution code here...
+
+ return str+" "+"The end.";
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
-Write a function that accepts an array and copies the first element to the end of the array. The change should be reflected in the source array that was passed in to the function. That is, the function should modify the array 'in place'.
+
+Write a function that accepts an array and copies the first element to the end of the array. 
+The change should be reflected in the source array that was passed in to the function. That is, the function should modify the array 'in place'.
+
 
 Do not use a return statement.
 
@@ -51,15 +71,24 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
+
+  
+  return arr.push(arr[0]);
+  
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The value of the yearBorn property should be the integer that was passed in.
 
-The change should be reflected in the source object that was passed in to the function. That is, the function should modify the object 'in place'.
+Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. 
+The value of the yearBorn property should be the integer that was passed in.
+
+The change should be reflected in the source object that was passed in to the function. 
+That is, the function should modify the object 'in place'.
+
 
 Do not use a return statement.
 
@@ -70,7 +99,10 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  // Solution code here...
+
+  obj.yearBorn=year;
+  return obj;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
