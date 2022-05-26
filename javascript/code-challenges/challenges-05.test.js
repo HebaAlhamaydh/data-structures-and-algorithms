@@ -201,7 +201,15 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  // Solution code here...
+  
+  const sum = arr.reduce( (previousValue, currentValue, currentIndex) => {
+    if (currentValue.children !=null)
+    return previousValue+currentValue.children.length;
+    else
+    return previousValue; 
+  }, 0);
+  return sum;
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
