@@ -51,27 +51,8 @@ If it does, return true. If not, return false.
 ------------------------------------------------------------------------------------------------ */
 
 const hasNumber = (string) => {
-  // let regex1=/^[a-z A-Z]?$/g;
-  // let regex2=/^[0-9]?$/;
-  
-  // let arr=string.split(" ");
-  //  for(let i=0;i<arr.length;i++)
-  //  {
-  //    if (regex1.test(string))
-  //    {
-  //      arr[i]=arr[i]+regex2;
-  //      return true;
-  //    }
-  //    else return false;
-  //  }
-  // let reg=".*[a-zA-Z].*"
-  // if(reg.test(string))
-  // {
-  //    string.replace(reg,/[a-z A-Z]+[0-9]+/);
-  //    return true;
-  // }
-  // else 
-  // {return false;}
+  let regex = /[A-Za-z]+\d+/;
+  return regex.test(string);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -94,6 +75,8 @@ const validateEmail = (email) => {
   // let regex=/^([a-z0-9_-]+)@([a-z0-9_\.-]+)\.[a-z A-Z]$/
   // let result=regex.test(email);
   //   return result;
+  let regex = /^\w+\.?\w+@\w+.(com|net|org)$/g;
+  return regex.test(email);
 
 };
 
@@ -119,7 +102,8 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  // Solution code here...
+  let check=/^(\((\d{3})\)[\s]?|(\d{3})[\s-]?)(\d{3})[\s-]?(\d{4})$/;
+  return check.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
