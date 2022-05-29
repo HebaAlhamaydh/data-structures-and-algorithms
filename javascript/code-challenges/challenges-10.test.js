@@ -93,17 +93,27 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
 
-  let array = [];
-  stores[0].forEach(numbers => array.push(0));
+  // let array = [];
+  // stores[0].forEach(numbers => array.push(0));
 
-  for (let i = 0 ; i < stores.length; i++ )
-  {
-    for (let j = 0 ; j < stores[i].length; j++)
-    {
-      array[j] = stores[i][j] + array[j];
+  // for (let i = 0 ; i < stores.length; i++ )
+  // {
+  //   for (let j = 0 ; j < stores[i].length; j++)
+  //   {
+  //     array[j] = stores[i][j] + array[j];
+  //   }
+  // }
+  // return array;
+  let result=[];
+  for (let i=0;i<stores[0].length;i++){
+    result.push(stores[0][i]);
+  }
+  for(let i=1;i<stores.length;i++){
+    for(let j=0;j<stores[i].length;j++){
+      result[j]+=stores[i][j];
     }
   }
-  return array;
+  return result;
  
 
 };
@@ -120,12 +130,24 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  let newArray= [];
-  data.forEach((key, indx) => newArray.push({
-    sales: `${key} cookies` ,
-    time: hours[indx],
-  }));
-  return newArray;
+  // let newArray= [];
+  // data.forEach((key, indx) => 
+  // newArray.push({
+  //   sales: `${key} cookies` ,
+  //   time: hours[indx],
+  // }));
+  // return newArray;
+  // let result=[];
+  // hours.forEach((element,idx)=>{
+  //   result.push({sales: `${data[idx]} cookies`, time:element});
+  // })
+  // return result;
+  let listObj = [];
+  for (let i = 0; i < hours.length; i++) {
+    listObj.push({"sales": `${data[i]} cookies`, "time": hours[i]});
+  }
+
+  return listObj;
 };
 
 
