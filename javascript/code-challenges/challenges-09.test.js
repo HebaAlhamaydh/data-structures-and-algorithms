@@ -69,13 +69,15 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-    let keyArray= Object.keys(obj);
-    let valueArray=Object.values(obj);
-    let joinedArr = keyArray.map((key, indx) => {
-      let string = `${key}: ${valueArray[indx]}`;
-      return string;
-    });
-    return joinedArr;
+    // let keyArray= Object.keys(obj);
+    // let valueArray=Object.values(obj);
+    // let joinedArr = keyArray.map((key, indx) => {
+    //   let string = `${key}: ${valueArray[indx]}`;
+    //   return string;
+    // });
+    // return joinedArr;
+
+  return Object.keys(obj).map((element)=>`${element}: ${obj[element]}`)  ;
   
 };
 
@@ -150,12 +152,21 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   
-  return arr.map((element) => {
-    if (element.children) {
-      return element.name;
+  // return arr.map((element) => {
+  //   if (element.children) {
+  //     return element.name;
+  //   }
+  // })
+  // .includes(character);
+  let value = false;
+  arr.map((element) => {
+    if (element.name === character) {
+      if (Object.keys(element).includes('children')) {
+        value = true;
+      }
     }
-  })
-  .includes(character);
+  });
+  return value;
 };
 
 
