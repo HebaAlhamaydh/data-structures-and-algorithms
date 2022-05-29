@@ -55,20 +55,28 @@ let characters = [
 
 const sortByChildren = (charArray) => {
 
-  return charArray.sort((a, b) => {
-    if (a.children.length > b.children.length) {
-      return 1;
+  // return charArray.sort((a, b) => {
+  //   if (a.children.length > b.children.length) {
+  //     return 1;
+  //   }
+  //   if (a.children.length < b.children.length) {
+  //     return -1;
+  //   }
+  //   if (a.name > b.name) {
+  //     return 1;
+  //   }
+  //   if (a.name < b.name) {
+  //     return -1;
+  //   }
+  // });
+  charArray.sort((a,b)=> {
+    if(a.children.length===b.children.length){
+      return a.name - b.name;
     }
-    if (a.children.length < b.children.length) {
-      return -1;
-    }
-    if (a.name > b.name) {
-      return 1;
-    }
-    if (a.name < b.name) {
-      return -1;
-    }
+    
+    return  a.children.length-b.children.length  
   });
+  return charArray
 };
 
 /* ------------------------------------------------------------------------------------------------
