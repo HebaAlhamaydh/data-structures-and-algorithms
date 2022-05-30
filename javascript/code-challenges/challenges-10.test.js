@@ -71,7 +71,8 @@ const totalSum = (matrix) => {
 CHALLENGE 4
 
 You friend Pat has a chain of stores around the greater Seattle area.
- He specializes in selling salmon cookies. Pat has data for the hourly sales of cookies per hour for each store. He wants to create an array of the total number of cookies sold per hour for all of his stores combined.
+ He specializes in selling salmon cookies. Pat has data for the hourly sales of cookies per hour for each store. He wants to 
+ create an array of the total number of cookies sold per hour for all of his stores combined.
 
 Write a function named grandTotal that adds up the cookies sales for each hour of operation for all of the stores combined.
 For example, the first element in the hourlySales array should be the sum of the cookies sold in the 9:00 a.m. hour at all five stores combined.
@@ -121,7 +122,7 @@ const grandTotal = (stores) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
-Pat has decided that he would also like to organize his data as objects containing the number of cookies sold per hour and the time.
+Pat has decided that he would also like to organize his //data as objects containing the number of cookies// sold per hour and the time.
 
 Here is sample data for the 9:00 sales: { sales: '88 cookies', time: '9 a.m.' }.
 
