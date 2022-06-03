@@ -26,3 +26,5 @@ To run your tests
 [array-reverse](./javascript/reverseArray/README.md)
 ## Link to the code cahllenge class 02 :
 [array-insert-shift](./javascript/array-insert-shift/README.md)
+## Link to the Code Challenge: Linked List Implementation :
+[Linked List ](./javascript/New-Implementation/README.md)
