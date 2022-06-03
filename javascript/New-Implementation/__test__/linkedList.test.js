@@ -33,7 +33,7 @@ describe("link list", () => {
         list.insert(90);
         list.insert(100);
         list.insert(900);
-         expect(list.includes(100)).toEqual();
+         expect(list.includes(100)).toEqual(true);
     })
    
    test("return false when searching for a value in the linked list that does not exist", () => {

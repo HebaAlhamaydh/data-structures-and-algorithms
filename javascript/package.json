@@ -6,6 +6,7 @@
   "scripts": {
     "get-challenge": "`which bash` ./code-challenges/bin/get-challenge.sh",
     "test": "jest --verbose --coverage",
+    "start":"node index.js",
     "lint": "eslint '**/*.js'"
   },
   "author": "",
