@@ -27,4 +27,4 @@ To run your tests
 ## Link to the code cahllenge class 02 :
 [array-insert-shift](./javascript/array-insert-shift/README.md)
 ## Link to the Code Challenge: Linked List Implementation :
-[Linked List ](./javascript/New-Implementation/README.md)
+[Linked List ](./javascript/linkedlist/README.md)
