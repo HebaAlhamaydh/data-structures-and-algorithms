@@ -19,14 +19,13 @@ describe("link list", () => {
         expect(list.head.value).toEqual('two');
     })
     test("insert multiple nodes into the linked list", () => {
-        let list = new LinkedList();
+         let list = new LinkedList();
         list.insert('one');
         expect(list.head.value).toEqual('one');
         list.insert('two');
         expect(list.head.value).toEqual('two');
         list.insert('three');
-        expect(list.head.value).toEqual('three');
-        
+        expect(list.head.value).toEqual('three');  
     })
     test("return true when finding a value within the linked list that exists ", () => {
         let list = new LinkedList();
