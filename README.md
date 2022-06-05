@@ -21,7 +21,7 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
-## Table of Contents
+### Table of Contents:
 ## Link to the code cahllenge class 01 :
 [array-reverse](./javascript/reverseArray/README.md)
 ## Link to the code cahllenge class 02 :
