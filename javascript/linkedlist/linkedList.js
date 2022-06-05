@@ -4,6 +4,7 @@ const Node = require('./node');
 class LinkedList {
     constructor() {
         this.head = null;
+       
     }
     insert(value) {
         const newNode = new Node(value);
