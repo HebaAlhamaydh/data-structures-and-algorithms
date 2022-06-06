@@ -23,10 +23,12 @@ To run your tests
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 ### Table of Contents:
 ## Link to the code cahllenge class 01 :
-[array-reverse](./javascript/reverseArray/README.md)
+[Array-Reverse](./javascript/reverseArray/README.md)
 ## Link to the code cahllenge class 02 :
-[array-insert-shift](./javascript/array-insert-shift/README.md)
+[Array-Insert-Shift](./javascript/array-insert-shift/README.md)
 ## Link to the Code Challenge: Linked List Implementation :
 [Linked List ](./javascript/linkedlist/README.md)
+## Link to the code cahllenge class 03 :
+[Array-Binary-Search](./javascript/array-binary-search/README.md)
 
 
