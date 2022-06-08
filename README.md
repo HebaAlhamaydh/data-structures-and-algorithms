@@ -30,5 +30,7 @@ To run your tests
 [Linked List ](./javascript/linkedlist/README.md)
 ## Link to the code cahllenge class 03 :
 [Array-Binary-Search](./javascript/array-binary-search/README.md)
+## Link to the code cahllenge class 04 :
+[Matrix-sum-of-row](./javascript/matrix-sum/README.md)
 
 
