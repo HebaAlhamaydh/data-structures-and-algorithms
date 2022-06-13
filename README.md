@@ -32,5 +32,6 @@ To run your tests
 [Array-Binary-Search](./javascript/array-binary-search/README.md)
 ## Link to the code cahllenge class 04 :
 [Matrix-sum-of-row](./javascript/matrix-sum/README.md)
-
+## Link to the Code Challenge: Class 06:
+[linked-list-insertions](./javascript/linked-list-insertions/README.md)
 
