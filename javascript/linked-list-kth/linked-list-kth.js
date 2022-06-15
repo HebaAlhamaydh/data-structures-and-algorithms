@@ -30,37 +30,6 @@ class LinkedList {
     }
 
 
-    // printNthFromLast(n) {
-    //     var main_ptr = this.head;
-    //     var ref_ptr = this.head;
-
-    //     var count = 0;
-    //     if (this.head != null) {
-    //         while (count < n) {
-    //             if (ref_ptr == null) {
-    //                 // document.write(n + " is greater than the no " +
-    //                 // " of nodes in the list");
-    //                 return;
-    //             }
-    //             ref_ptr = ref_ptr.next;
-    //             count++;
-    //         }
-
-    //         if (ref_ptr == null) {
-
-    //             if (this.head != null)
-    //                 document.write("Node no. " + n + " from last is " + head.data);
-    //         } else {
-
-    //             while (ref_ptr != null) {
-    //                 main_ptr = main_ptr.next;
-    //                 ref_ptr = ref_ptr.next;
-    //             }
-    //             // document.write("Node no. " + n + " from last is " + main_ptr.data);
-    //         }
-    //     }
-    // }
-    ////return the node of the index from the head of the linked list
     kthFromHead(k) {
         let counter = 0;
         let currentNode = this.head;
