@@ -34,4 +34,6 @@ To run your tests
 [Matrix-sum-of-row](./javascript/matrix-sum/README.md)
 ## Link to the Code Challenge: Class 06:
 [linked-list-insertions](./javascript/linked-list-insertions/README.md)
+## Link to the Code Challenge: Class 07:
+[linked-list-kth](./javascript/linked-list-kth/README.md)
 
