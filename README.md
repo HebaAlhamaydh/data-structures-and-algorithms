@@ -36,4 +36,7 @@ To run your tests
 [linked-list-insertions](./javascript/linked-list-insertions/README.md)
 ## Link to the Code Challenge: Class 07:
 [linked-list-kth](./javascript/linked-list-kth/README.md)
+## Link to the Code Challenge: Class 08:
+[linked-list-zip](./javascript/linked-list-zip/README.md)
+
 
