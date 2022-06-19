@@ -24,7 +24,7 @@ class LinkedList {
             return 'Exception';
           }
         currentNode = this.head;
-        for (let i = 1; i < length - index; i++)
+        for (let i = 0; i < length - index-1; i++)
             {currentNode = currentNode.next;}
         return currentNode.value;
     }
