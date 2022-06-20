@@ -38,5 +38,7 @@ To run your tests
 [linked-list-kth](./javascript/linked-list-kth/README.md)
 ## Link to the Code Challenge: Class 08:
 [linked-list-zip](./javascript/linked-list-zip/README.md)
+## Link to the Code Challenge: Class 09:
+[linked-list-Reverse](./javascript/linked-list-Reverse/README.md)
 
 
