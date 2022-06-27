@@ -45,3 +45,5 @@ To run your tests
 [stack-and-queue](./javascript/stack-and-queue/README.md)
 ## Link to the Code Challenge: Class 11:
 [stack-queue-pseudo](./javascript/stack-queue-pseudo/README.md)
+## Link to the Code Challenge: Class 12:
+[stack-queue-animal-shelter](./javascript/stack-queue-animal-shelter/README.md)
