@@ -8,7 +8,7 @@ describe("Queue", () => {
         queue.enqueue('one');
         expect(queue.inputStack.top.value).toEqual('one');
     })
-    test("Can successfully push multiple values onto a queue", () => {
+    test("Can successfully enquee multiple values onto a queue", () => {
         let queue = new Queue();
         queue.enqueue('one');
         queue.enqueue('two');
@@ -38,6 +38,7 @@ describe("Queue", () => {
         queue.dequeue();
         queue.dequeue();
         expect(queue.length).toEqual(0);
+       
     })
     test("Can successfully instantiate an empty queue", () => {
         let queue = new Queue();
