@@ -11,12 +11,12 @@ const Stack=require('../lab/Stack');
         let x = string[i];
   
         if (x == '(' || x == '[' || x == '{')
-        {  // Push the element in the stack
+        { 
             stack.push(x);
         }
         if (stack.length == 0)
         return false;
-        
+    
         let check;
         switch (x){
         case ')':
