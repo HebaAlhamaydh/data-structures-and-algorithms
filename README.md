@@ -50,4 +50,6 @@ To run your tests
 ## Link to the Code Challenge: Class 13:
 [stack-queue-brackets](./javascript/stack-queue-brackets/README.md)
 ## Link to the Code Challenge: Class 14:
-[stack-getMax](./javascript//stackGetMax/README.md)
+[stack-getMax](./javascript/stackGetMax/README.md)
+## Link to the Code Challenge: Class 15:
+[ Binary Tree and BST Implementation](./javascript/trees/README.md)
