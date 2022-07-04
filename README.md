@@ -53,3 +53,5 @@ To run your tests
 [stack-getMax](./javascript/stackGetMax/README.md)
 ## Link to the Code Challenge: Class 15:
 [ Binary Tree and BST Implementation](./javascript/trees/README.md)
+## Link to the Code Challenge: Class 16:
+[tree-max](./javascript/tree-max/README.md)
