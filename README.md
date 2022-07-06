@@ -55,3 +55,5 @@ To run your tests
 [ Binary Tree and BST Implementation](./javascript/trees/README.md)
 ## Link to the Code Challenge: Class 16:
 [tree-max](./javascript/tree-max/README.md)
+## Link to the Code Challenge: Class 17:
+[breadth first](./javascript/breadth-first/README.md)
