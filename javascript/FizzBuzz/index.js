@@ -1,7 +1,6 @@
 'use strict';
 
-const breadthFirst=require('./breadth-first')
-const BinaryTree=require('./binary-tree')
+const BinaryTree=require('./fizzBuzz')
 
 const Node = require('./node');
 
@@ -29,4 +28,5 @@ three.right = five;
 
 tree = new BinaryTree(one);
 
-console.log(breadthFirst(tree));
+//console.log(breadthFirst());
+console.log(fizzBuzz());

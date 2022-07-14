@@ -1,5 +1,6 @@
 'use strict';
-const BinaryTree = require('../breadth-first');
+const breadthFirst=require('../breadth-first')
+const BinaryTree=require('../binary-tree')
 const Node = require('../node');
 
 let tree = null;
@@ -28,14 +29,14 @@ describe("Binary Tree", () => {
         tree = new BinaryTree(one);
     });
     test(' implement the breadth-firs', () => {
-        expect(tree.breadthFirst()).toEqual([
+        expect(breadthFirst(tree)).toEqual([
             1, 2, 3, 6, 4,
             5, 7, 8, 9
           ]);
     });
     test('return EmptyTree on an empty tree', () => {
         const newTree = new BinaryTree();
-        expect(newTree.breadthFirst()).toEqual("Empty tree!");
+        expect(breadthFirst(newTree)).toEqual("Empty tree!");
     });
     
 })
