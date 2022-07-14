@@ -1,6 +1,8 @@
 # Reverse an Array
 
-ReverseArray function takes an array as an argument. Without utilizing any of the built-in methods available to my language, return an array with elements in reversed order.
+<!-- Description of the challenge -->
+**ReverseArray** function takes an array as an argument. Without utilizing any of the built-in methods available to my language, return an array with elements in reversed order.
+
 
 ## Whiteboard Process
 ![whiteboard](./array-reverse.jpg)
