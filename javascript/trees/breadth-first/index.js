@@ -1,6 +1,7 @@
 'use strict';
 
-const BinaryTree=require('./breadth-first')
+const breadthFirst=require('./breadth-first')
+const BinaryTree=require('./binary-tree')
 
 const Node = require('./node');
 
@@ -28,4 +29,4 @@ three.right = five;
 
 tree = new BinaryTree(one);
 
-console.log(tree.breadthFirst());
+console.log(breadthFirst(tree));
