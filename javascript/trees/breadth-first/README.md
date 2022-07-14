@@ -11,6 +11,6 @@ NOTE: Traverse the input tree using a Breadth-first approach
 Time Complexity: O(n) 
 Auxiliary Space: O(n). 
 ## Whiteboard Process
-![](./breadth-first.jpg)
+![](./breadthFirst.jpg)
 ## Test
 ![](./test.png)
