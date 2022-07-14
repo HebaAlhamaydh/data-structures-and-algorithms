@@ -1,14 +1,11 @@
 'use strict';
-class BinaryTree {
-    constructor(root = null) {
-        this.root = root;
-    }
-    breadthFirst() {
-        if (this.root == null)
+
+    function breadthFirst(tree) {
+        if (tree.root == null)
         return "Empty tree!";
         let visited = [];
         let queue = [];
-        let currentNode = this.root;
+        let currentNode = tree.root;
         queue.push(currentNode);
         while (queue.length > 0) {
             currentNode = queue.shift();
@@ -18,6 +15,7 @@ class BinaryTree {
             
         };
         return visited;
-    }
-}
-module.exports = BinaryTree;
+     }
+
+
+module.exports = breadthFirst;
