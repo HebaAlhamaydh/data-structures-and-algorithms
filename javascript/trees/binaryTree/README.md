@@ -35,4 +35,4 @@ Big O for contains is O(log n)
 ### Binary Tree Test
 ![Binary Tree](./BTTest.png)
 ### Binary Search Tree Test
-![Binary Search Tree](./BSTTest.png)
+![Binary Search Tree](../binarySearchTree/BSTTest.png)

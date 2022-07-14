@@ -40,7 +40,6 @@ To run your tests
 [linked-list-zip](./javascript/linked-list-zip/README.md)
 ## Link to the Code Challenge: Class 09:
 [linked-list-Reverse](./javascript/linked-list-Reverse/README.md)
-
 ## Link to the Code Challenge: Class 10:
 [stack-and-queue](./javascript/stack-and-queue/README.md)
 ## Link to the Code Challenge: Class 11:
@@ -52,8 +51,10 @@ To run your tests
 ## Link to the Code Challenge: Class 14:
 [stack-getMax](./javascript/stackGetMax/README.md)
 ## Link to the Code Challenge: Class 15:
-[ Binary Tree and BST Implementation](./javascript/trees/README.md)
+[ Binary Tree and BST Implementation](./javascript/trees/binaryTree/README.md)
 ## Link to the Code Challenge: Class 16:
-[tree-max](./javascript/tree-max/README.md)
+[tree-max](./javascript/trees/tree-max/README.md)
 ## Link to the Code Challenge: Class 17:
-[breadth first](./javascript/breadth-first/README.md)
+[breadth first](./javascript/trees/breadth-first/README.md)
+## Link to the Code Challenge: Class 18:
+[Fizz Buzz](./javascript/trees/fizzBuzz/README.md)

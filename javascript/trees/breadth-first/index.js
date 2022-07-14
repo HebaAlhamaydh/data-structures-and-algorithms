@@ -30,3 +30,4 @@ three.right = five;
 tree = new BinaryTree(one);
 
 console.log(breadthFirst(tree));
+
