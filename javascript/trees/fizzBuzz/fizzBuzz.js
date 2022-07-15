@@ -1,41 +1,59 @@
 'use strict';
+class Node {
+   constructor(value) {
+     this.value = value;
+   //   this.parent = null;
+     this.children = [];
+   }
+ } 
+ class KaryTree {
+   constructor(root=null) {
+     this.root = root;
+   
+   }
+ }
 
 function fizzBuzz(tree) {
    if (tree.root == null)
       return "Empty tree!";
-      let queue = [];
+      let temp = [];
       let visited = [];
    let currentNode = tree.root;
-   queue.push(currentNode);
-   while (queue.length > 0) {
-      currentNode = queue.shift();
+   temp.push(currentNode);
+   while (temp.length > 0) {
+      currentNode = temp.shift();
       if (currentNode.value % 5 === 0 && currentNode.value % 3 == 0) {
          currentNode.value = 'FizzBuzz';
-         visited.push(currentNode.value);
+          visited.push(currentNode.value);
       }
 
       else if (currentNode.value % 3 == 0) {
          currentNode.value = 'Fizz';
-         visited.push(currentNode.value);
+          visited.push(currentNode.value);
 
       }
 
       else if (currentNode.value % 5 == 0) {
          currentNode.value = 'Buzz';
-         visited.push(currentNode.value);
+          visited.push(currentNode.value);
       }
 
       else {
          currentNode.value = currentNode.value.toString();
-         visited.push(currentNode.value);
+       visited.push(currentNode.value);
       }
-
-      if (currentNode.left) queue.push(currentNode.left);
-      if (currentNode.right) queue.push(currentNode.right);
-
+         for(let child of currentNode.children){
+            temp.push(child); 
+        } 
    };
-   return visited;
+  
+    return tree.root;
+   // return visited;
 }
 
 
-module.exports = fizzBuzz;
+module.exports = {
+   Node,
+   KaryTree,
+   fizzBuzz,
+ };
