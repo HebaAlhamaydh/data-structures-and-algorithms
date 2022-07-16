@@ -1,4 +1,5 @@
 'use strict';
+
 class BinaryTree {
     constructor(root = null) {
         this.root = root;
@@ -16,7 +17,7 @@ class BinaryTree {
         traverse(this.root);
         return result;
     }
-
+            ///// three methods for Depth first traversal /////
     // left - root - right 
     inOrder() {
         let result = [];
