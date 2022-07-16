@@ -58,3 +58,5 @@ To run your tests
 [breadth first](./javascript/trees/breadth-first/README.md)
 ## Link to the Code Challenge: Class 18:
 [Fizz Buzz](./javascript/trees/fizzBuzz/README.md)
+## Link to the Code Challenge: Class 19:
+[Sum Odd Number](./javascript/trees//sumOddNumbers/README.md)
