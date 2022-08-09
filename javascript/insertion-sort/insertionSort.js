@@ -1,4 +1,5 @@
 'use strict';
+let arr=[8, 4, 23, 42, 16, 15]
 function insertionSort(arr){
 
     for(let i=1; i< arr.length;i++){
@@ -14,4 +15,5 @@ function insertionSort(arr){
 
 return arr;
 }
+console.log(insertionSort(arr))
 module.exports = insertionSort;
