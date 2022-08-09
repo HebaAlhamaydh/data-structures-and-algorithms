@@ -24,3 +24,5 @@ Time: O(n^2) Space: O(1)
 ```
 ## Test
 ![](./test.png)
+## Tracing insertion Sort
+![](./trace.jpg)
