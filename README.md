@@ -60,6 +60,7 @@ To run your tests
 [Fizz Buzz](./javascript/trees/fizzBuzz/README.md)
 ## Link to the Code Challenge: Class 19:
 [Sum Odd Number](./javascript/trees/sumOddNumbers/README.md)
-
 ## Link to the Code Challenge: Class 26:
 [Insertion Sort](./javascript/insertion-sort/README.md)
+## Link to the Code Challenge: Class 27:
+[Merge Sort](./javascript/merge-sort/README.md)

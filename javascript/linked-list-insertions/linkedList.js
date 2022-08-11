@@ -42,7 +42,7 @@ class LinkedList {
         }
     }
     insertBefore(value, newValue) {
-        let newNode = new Node(newValue);
+    let newNode = new Node(newValue);
     let currentNode = this.head;
     let previousNode = null;
     while (currentNode) {
