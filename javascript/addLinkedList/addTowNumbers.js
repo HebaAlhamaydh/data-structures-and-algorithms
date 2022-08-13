@@ -30,6 +30,7 @@ carry=Math.floor(sum/10);
 //For the sum.13 % 10 gives us 3, because the remainder of 13/10 is 3.
 sum=sum%10;
 newList.append(sum);
+//if sum > 0, if there's a number that's being carried over, then a new node will be made.
 sum = carry;
 carry = 0;
 
