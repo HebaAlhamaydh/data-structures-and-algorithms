@@ -1,5 +1,5 @@
 'use strict';
-
+ const arr = [-5, 15, -10, 0, 25, 5, 1, 2];
 function Mergesort(arr) {
 
     let n = arr.length;
@@ -43,7 +43,7 @@ while (i < left.length) {
     return arr;  
 }
 
-// const arr = [-5, 15, -10, 0, 25, 5, 1, 2];
-// Mergesort(arr);
-// console.log("Array after sorting: " + arr);
-module.exports= Mergesort;
+
+Mergesort(arr)
+ console.log(arr);
+module.exports = Mergesort;
