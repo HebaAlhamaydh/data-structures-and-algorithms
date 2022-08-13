@@ -24,8 +24,10 @@ while(current1!=null || current2!=null || sum >0){
     sum+=current2.value;
     current2=current2.next;
 }
-
+//If sum = 13, then we know the carry should be 1. To get the carry, we can divide the sum by 10.
+// Since we don't want a remainder, we can use Math.floor(). Math.floor(13/10) is 1,
 carry=Math.floor(sum/10);
+//For the sum.13 % 10 gives us 3, because the remainder of 13/10 is 3.
 sum=sum%10;
 newList.append(sum);
 sum = carry;
