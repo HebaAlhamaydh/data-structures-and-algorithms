@@ -11,9 +11,9 @@ ll.append(7000);
 
 
 console.log(ll.tostring());
-console.log(ll.kthFromEnd(0));
+console.log(ll.kthFromEnd(0));//7000
 // console.log(ll.indexOf(900));
-console.log(ll. kthFromEnd(7));
-console.log(ll.kthFromEnd(1));
-console.log(ll.kthFromEnd(5));
-console.log(ll.kthFromEnd(-1));
+console.log(ll. kthFromEnd(7));//exception
+console.log(ll.kthFromEnd(1));//5000
+console.log(ll.kthFromEnd(5));//30
+console.log(ll.kthFromEnd(-1));//exception
