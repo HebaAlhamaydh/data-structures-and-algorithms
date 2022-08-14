@@ -1,4 +1,4 @@
-## Quick Sort
+## Quick Sort algorithm
 Quick sort follows Divide and Conquer algorithm. It is dividing elements in to smaller parts based on some condition and performing the sort operations on those divided smaller parts
 ## Code
 ```js
@@ -100,7 +100,6 @@ Since quick sort is a recursive function, we call the partition function again a
 Again call function at right part and swap 80 and 90
 
 ![](./images/8.png)
-
 
 
 ## Approach & Efficiency
