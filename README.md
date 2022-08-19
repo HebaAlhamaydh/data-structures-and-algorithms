@@ -64,3 +64,5 @@ To run your tests
 [Insertion Sort](./javascript/insertion-sort/README.md)
 ## Link to the Code Challenge: Class 27:
 [Merge Sort](./javascript/merge-sort/README.md)
+## Link to the  Code Challenge: Class 30: 
+[Hash Table ](./javascript/hashTable/README.md)
