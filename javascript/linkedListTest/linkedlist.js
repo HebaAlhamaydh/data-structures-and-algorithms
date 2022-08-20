@@ -6,7 +6,30 @@ class LinkedList {
         this.head = null;
         this.tail = null;
     }
-
+    ////compare two linkedlist
+    // compare(list1, list2) {
+    //     let current1 = list1.head;
+    //     let current2 = list2.head;
+    //     if(current1==null && current2==null){
+    //         return true
+    //     }
+    //     if(current1==null && current2!==null){
+    //         return false
+    //     }
+    //     if(current1!== null && current2==null){
+    //         return false
+    //     }
+    //     else
+    //     while (current1 && current2) {
+    //         if (current1.value !== current2.value) {
+    //             return false
+    //         }
+    //         current1=current1.next;
+    //         current2=current2.next;
+    //         return true
+    //     }
+    //     return false
+    // }
     //////sum all node///
     sum(list) {
         let current = list.head;
@@ -53,12 +76,9 @@ class LinkedList {
             prev = current;//move prev node forward
             current = next;//move current node forward
         }
-        list.head=prev
+        list.head = prev
         return list
     }
-
-
-
 
     ///add to the end of the list//
     append(value) {

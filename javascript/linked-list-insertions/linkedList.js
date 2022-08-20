@@ -33,53 +33,80 @@ class LinkedList {
             return this;
         }
         else {
-           let currentNode=this.head;
-           while(currentNode.next){
-            currentNode=currentNode.next;
-           }
-            currentNode.next=newNode;
+            let currentNode = this.head;
+            while (currentNode.next) {
+                currentNode = currentNode.next;
+            }
+            currentNode.next = newNode;
             return this;
         }
     }
     insertBefore(value, newValue) {
-    let newNode = new Node(newValue);
-    let currentNode = this.head;
-    let previousNode = null;
-    while (currentNode) {
-      if (currentNode.value === value) {
-        if (previousNode === null) {
-          this.head = newNode;
-          newNode.next = currentNode;
-        } else {
-          previousNode.next = newNode;
-          newNode.next = currentNode;
+        let newNode = new Node(newValue);
+        let currentNode = this.head;
+        let previousNode = null;
+        while (currentNode) {
+            if (currentNode.value === value) {
+                if (previousNode === null) {
+                    this.head = newNode;
+                    newNode.next = currentNode;
+                } else {
+                    previousNode.next = newNode;
+                    newNode.next = currentNode;
+                }
+
+                return this;
+            }
+            previousNode = currentNode;
+            currentNode = currentNode.next;
         }
-        
-        return this;
-      }
-      previousNode = currentNode;
-      currentNode = currentNode.next;
+
     }
-           
+
+    insertBefore2(value, newValue) {
+        let newNode = new Node(newValue);
+        let current = this.head;
+        //linked list is empty
+        /// 1. Check if the given Node is null 
+        if (!this.head) {
+            return this;
         }
-       
-    
+        //linked list contain only one node
+        if (current.value == value) {
+            newNode.next = this.head;
+            this.head = newNode;
+            return this;
+        }
+        //
+        while (current.next != null) {
+            if (current.next.value == value) {
+                newNode.next = current.next;
+                current.next = newNode;
+                return this;
+            }
+            current = current.next;
+        }
+        return this
+
+    }
+
+
     insertAfter(value, newValue) {
         // 1. Check if the given Node is null 
-        
-        if (!this.head ) {
+
+        if (!this.head) {
             return this;
         }
         let currentNode = this.head;
         var newNode = new Node(newValue);
         while (currentNode) {
-            if (currentNode.value === value){
-             // Make next of new Node as next of prev_node 
-             newNode.next = currentNode.next;
-            //  make next of prev_node as new_node 
-            currentNode.next = newNode;
-            } 
-            currentNode=currentNode.next; 
+            if (currentNode.value === value) {
+                // Make next of new Node as next of prev_node 
+                newNode.next = currentNode.next;
+                //  make next of prev_node as new_node 
+                currentNode.next = newNode;
+            }
+            currentNode = currentNode.next;
         }
         return this;
     }
@@ -93,7 +120,7 @@ class LinkedList {
             // }
             currentNode = currentNode.next;
         }
-        return str +"NULL";
+        return str + "NULL";
     }
 }
 module.exports = LinkedList;
