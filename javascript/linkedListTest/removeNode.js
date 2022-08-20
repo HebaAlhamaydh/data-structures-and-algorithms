@@ -12,7 +12,24 @@ class LinkedList {
         this.tail = null;
 
     }
-    
+    // removeNode(l,n){
+
+    // let fast=l.head
+    // let slow=l.head
+    // for(let i=0;i<n;i++){
+    //     fast=fast.next;
+    // }
+
+    // while (fast.next!==null) {
+    //     fast = fast.next;
+    //     slow = slow.next;
+    // }
+
+    //   // So, delete the node first is pointing to
+    //   slow.next = slow.next.next;
+    //   return l
+
+    // }
     //remove head
     removeHead() {
         this.head = this.head.next;
@@ -23,12 +40,13 @@ class LinkedList {
     removeNode(value) {
        let current=this.head;
        let prev=this.head;
-
-       if(this.head.value==value){
+       if(this.head .value==value){
         this.head = this.head.next;
         return this;
        }
+       
        while(current){
+        
         if(current.value!==value)
         {
             prev=current;
@@ -36,9 +54,10 @@ class LinkedList {
         }
          else if(current.value==value){
             current=current.next;
-            prev.next=current
+            prev.next=current.next
             return this;
         }
+       
        }
     }
 
@@ -87,5 +106,4 @@ l1.append(4);
 
 console.log(l1.tostring());
 // console.log((l1.removeHead()).tostring());
-//console.log((l1.removeNode(3)).tostring());
-console.log((l1.removeNode(4)).tostring());
+console.log((l1.removeNode(3)).tostring());
