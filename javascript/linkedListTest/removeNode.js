@@ -54,12 +54,43 @@ class LinkedList {
         }
          else if(current.value==value){
             current=current.next;
-            prev.next=current.next
+            prev.next=current
+            // prev=current.next.next;
+            // current.next=prev
             return this;
         }
        
        }
     }
+    //remove node by given index
+    removeNodeInd(index) {
+        let current=this.head;
+        let prev=this.head;
+        let counter=0;
+        if(counter==index){
+         this.head = this.head.next;
+         return this;
+        }
+        
+        while(current){
+            counter++
+        if(counter!==index){
+             prev=current;
+             current=current.next;
+             
+         }
+          else 
+          if(counter==index){
+             prev=current.next.next;
+             current.next=prev
+            //  current=current.next;
+            //  prev.next=current
+             return this;
+         }
+        
+        }
+     }
+ 
 
     /// Add a node at the end
     append(value) {
@@ -106,4 +137,5 @@ l1.append(4);
 
 console.log(l1.tostring());
 // console.log((l1.removeHead()).tostring());
-console.log((l1.removeNode(3)).tostring());
+// console.log((l1.removeNode(4)).tostring());
+console.log((l1.removeNodeInd(1)).tostring());//delete 5
