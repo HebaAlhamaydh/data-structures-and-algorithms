@@ -16,6 +16,7 @@ class LinkedList {
         }
         else {
             // Make next of new Node as head 
+            //both pointers point at the same node.
             newNode.next = this.head;
             // Move the head to point to new Node 
             this.head = newNode;

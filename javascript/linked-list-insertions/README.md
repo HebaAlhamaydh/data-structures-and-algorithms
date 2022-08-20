@@ -38,3 +38,5 @@ adds a new node with the given new value immediately after the first node that h
 # Approach & Efficiency
 
 In each one of mentioned functions the worst case was to loop through linked list elements, so I used (while) approach and have an O(n) as time complexity, and O(1) as space complexity because there is no need to additional space.
+
+***append:*** Time complexity of append is O(n) where n is the number of nodes in the linked list. Since there is a loop from head to end

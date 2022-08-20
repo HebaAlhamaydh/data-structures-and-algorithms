@@ -13,22 +13,20 @@ class LinkedList {
         let currentNode = this.head;
         // count the number of nodes in Linked List
         while (currentNode != null) {
-            currentNode = currentNode.next;
             length++;
+            currentNode = currentNode.next;
+
         }
         // if value of index is more than length of the linked list
-        if (length < index) {
+        if (length <= index)  {
             return 'Exception';
         }
-        if (index < 0) {
-            return 'Exception';
-          }
-        currentNode = this.head;
-        for (let i = 0; i < length - index-1; i++)
-            {currentNode = currentNode.next;}
+            currentNode = this.head;
+            for (let i = 0; i < length - index - 1; i++) {
+                currentNode = currentNode.next;
+            }
         return currentNode.value;
     }
-
 
     kthFromHead(k) {
         let counter = 0;
@@ -41,6 +39,22 @@ class LinkedList {
             currentNode = currentNode.next;
         }
         return -1;
+
+    }
+    kthFromHead2(k) {
+        var currentNode = this.head;
+        var count = 0;
+        while (currentNode != null) {
+            count++;
+            currentNode = currentNode.next;
+        }
+        currentNode=this.head;
+        for (let i = 0; i < count ; i++) {
+            if(i==k){
+                return currentNode.value;
+            }
+            currentNode = currentNode.next;
+        }
 
     }
 
