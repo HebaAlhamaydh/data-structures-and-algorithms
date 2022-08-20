@@ -1,5 +1,10 @@
 'use strict';
-const Node = require('../node');
+class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
+    }
+}
 
 class LinkedList {
     constructor() {
@@ -7,24 +12,7 @@ class LinkedList {
         this.tail = null;
 
     }
-    // removeNode(l,n){
-
-    // let fast=l.head
-    // let slow=l.head
-    // for(let i=0;i<n;i++){
-    //     fast=fast.next;
-    // }
-
-    // while (fast.next!==null) {
-    //     fast = fast.next;
-    //     slow = slow.next;
-    // }
-
-    //   // So, delete the node first is pointing to
-    //   slow.next = slow.next.next;
-    //   return l
-
-    // }
+    
     //remove head
     removeHead() {
         this.head = this.head.next;
