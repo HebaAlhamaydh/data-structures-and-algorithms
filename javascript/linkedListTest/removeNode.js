@@ -73,21 +73,21 @@ class LinkedList {
         }
         
         while(current){
-            counter++
+            
         if(counter!==index){
              prev=current;
              current=current.next;
-             
+             counter++
          }
-          else 
+          
           if(counter==index){
-             prev=current.next.next;
-             current.next=prev
-            //  current=current.next;
-            //  prev.next=current
+            //  prev=current.next.next;
+            //  current.next=prev
+             current=current.next;
+             prev.next=current
              return this;
          }
-        
+         
         }
      }
  
@@ -138,4 +138,4 @@ l1.append(4);
 console.log(l1.tostring());
 // console.log((l1.removeHead()).tostring());
 // console.log((l1.removeNode(4)).tostring());
-console.log((l1.removeNodeInd(1)).tostring());//delete 5
+console.log((l1.removeNodeInd(1)).tostring());//delet
