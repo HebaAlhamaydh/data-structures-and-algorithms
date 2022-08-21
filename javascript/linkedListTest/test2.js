@@ -225,6 +225,25 @@ includes(value) {
     }
     return false;
 }
+     /// Add a node at the end
+     append(value) {
+        const newNode = new Node(value);
+        if (!this.head) {
+            this.head = newNode;
+            this.size++;
+            return this;
+        }
+        else {
+            let currentNode = this.head;
+            while (currentNode.next) {
+                currentNode = currentNode.next;
+            }
+            currentNode.next = newNode;
+            this.size++
+            return this;
+        }
+    
+    }
 ///print the list as string
 tostring() {
     let currentNode = this.head;
