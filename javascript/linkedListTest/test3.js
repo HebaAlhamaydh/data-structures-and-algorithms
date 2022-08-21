@@ -12,60 +12,10 @@ class LinkedList {
         this.tail = null;
         this.size=0;
     }
-    ///
-    //cycle
-    // cycle(){
-    //     let current=this.head;
-    //     let faster=this.head;
-    //     while(faster!=null && faster.next!=null && current!==null){
-    //         //current moves step by step. faster moves two steps at time.
-    //         faster=faster.next.next;
-    //         current=current.next;
-    //         if(faster==current) return true;
-
-    //     }
-    //     return false;
-    // }
-
-    //middle node 1
+   
+    /////middle node 
     middleNode() {
-        let slow = this.head;
-        let faster = this.head;
-        while (faster && faster.next) {
-            slow = slow.next;
-            faster = faster.next.next;
-        }
-        return slow.value;
-    };
-    //middle node 2
-    middleNode2() {
-        let length = 0;
         let current = this.head;
-        while (current.next != null) {
-            length++;
-            current = current.next;
-
-        }
-        let middle = length / 2;
-
-        current = this.head;
-        let i = 0;
-        while (i < middle) {
-            current = current.next;
-            i++;
-        }
-        return current.value;
-
-    }
-    /////middle node 3
-    middleNode3() {
-        // let length = 0;
-        let current = this.head;
-        // while (current.next != null) {
-        //     length++;
-        //     current = current.next;
-
-        // }
         let middle = Math.floor(this.size/ 2);
         let counter = 0;
         current = this.head;
@@ -78,30 +28,20 @@ class LinkedList {
             counter++;
         }
     }
-    ///delete middle
+ ///delete middle
     deleteMiddle(){
-        let length = 0;
-        let current = this.head;
-        let prev=this.head;
-        while (current.next != null) {
-            length++;
-            current = current.next;
+    let mid = Math.floor(this.size / 2);
+    let current = this.head;
+    let count = 0;
+    while (current) {
+        if (mid === count) {
+            current.data = current.next.data;
+            current.next = current.next.next;
         }
-        let middle=Math.floor(length/2);
-        let counter=0;
-        current = this.head;
-        while(current){
-            if(counter==middle){
-                current=current.next
-                prev.next=current;
-                return this
-            }
-            prev=current
-            current=current.next;
-            counter++;
-        }
+        current = current.next;
+        count++;
     }
-
+}
     ////compare two linkedlist
     compare(list1, list2) {
         let current1 = list1.head;
@@ -167,6 +107,25 @@ class LinkedList {
         list.head = prev
         return list
     }
+     /// Add a node at the end
+ append(value) {
+    const newNode = new Node(value);
+    if (!this.head) {
+        this.head = newNode;
+        this.size++;
+        return this;
+    }
+    else {
+        let currentNode = this.head;
+        while (currentNode.next) {
+            currentNode = currentNode.next;
+        }
+        currentNode.next = newNode;
+        this.size++
+        return this;
+    }
+
+}
 
     //print linked list///
     tostring() {
@@ -214,9 +173,10 @@ console.log(l1.tostring());
 // console.log(l1.tostring());
 // console.log((l1.reverse(l1)).tostring());
 //console.log(l1.compare(l1,l2));
-// console.log(l1.middleNode());
+ console.log(l1.middleNode());
 // console.log(l1.middleNode2());
 // console.log(l1.middleNode3());
-console.log((l1.deleteMiddle()).tostring());
-
+// console.log((l1.deleteMiddle()).tostring());
+l1.deleteMiddle()
+console.log(l1.tostring());
 
