@@ -19,7 +19,6 @@ let sum=0;
 let carry=0;
 while(current1!=null || current2!=null || sum >0){
 
-   
    if(current1!=null ){
     sum+=current1.value;
     current1=current1.next;
