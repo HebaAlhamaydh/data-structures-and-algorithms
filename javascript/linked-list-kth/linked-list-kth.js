@@ -41,22 +41,22 @@ class LinkedList {
         return -1;
 
     }
-    kthFromHead2(k) {
-        var currentNode = this.head;
-        var count = 0;
-        while (currentNode != null) {
-            count++;
-            currentNode = currentNode.next;
-        }
-        currentNode=this.head;
-        for (let i = 0; i < count ; i++) {
-            if(i==k){
-                return currentNode.value;
-            }
-            currentNode = currentNode.next;
-        }
+    // kthFromHead2(k) {
+    //     var currentNode = this.head;
+    //     var count = 0;
+    //     while (currentNode != null) {
+    //         count++;
+    //         currentNode = currentNode.next;
+    //     }
+    //     currentNode=this.head;
+    //     for (let i = 0; i < count ; i++) {
+    //         if(i==k){
+    //             return currentNode.value;
+    //         }
+    //         currentNode = currentNode.next;
+    //     }
 
-    }
+    // }
 
     //// Returns count of nodes in linked list
     getCount() {
