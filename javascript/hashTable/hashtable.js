@@ -90,21 +90,29 @@ class Hashmap {
         return null
     }
 
-    contains(key) { 
-        const hash=this.makeHash(key)
-        if(this.map[hash])
-        {
-            let current=this.map[hash].head
-            while(current){
-               if(current.value[key]) 
-               {
-                   return true
-               }  
-               current=current.next
-            }
+    // contains(key) { 
+    //     const hash=this.makeHash(key)
+    //     if(this.map[hash])
+    //     {
+    //         let current=this.map[hash].head
+    //         while(current){
+    //            if(current.value[key]) 
+    //            {
+    //                return true
+    //            }  
+    //            current=current.next
+    //         }
+    //     }
+    //     return false
+    // }
+    contains(key) {
+        let index = this.makeHash(key);
+        if (!this.map[index]) {
+          return false;
         }
-        return false
+        return true;
     }
+
     keys() {
         let keys=[];
         for(let i=0;i<=this.map.length;i++){
@@ -124,16 +132,27 @@ class Hashmap {
       return keys
         
      }
+    //  keys(){
+    //     let arr=[]
+    //     this.map.forEach((element)=>{
+    //         let currentNode  = element.head
+    //         while(currentNode ){
+    //            arr.push(Object.keys(currentNode.value))
+    //            currentNode=currentNode.next
+    //         }
+    //     })
+    //     return arr
+    // }
 
 }
-// const myhashmap = new Hashmap(10);
-// myhashmap.add('heba', '900000');
-// myhashmap.add('hassan', '100000');
-// myhashmap.add('zayd', '50000');
-// myhashmap.add('mouna', '500000');
-// myhashmap.add('lareen', '490000');
-// myhashmap.add('aws', '450000');
-// myhashmap.add('aws', '411150000');
+const myhashmap = new Hashmap(10);
+myhashmap.add('heba', '900000');
+myhashmap.add('hassan', '100000');
+myhashmap.add('zayd', '50000');
+myhashmap.add('mouna', '500000');
+myhashmap.add('lareen', '490000');
+myhashmap.add('aws', '450000');
+myhashmap.add('aws', '411150000');
 // //get value befor update
 // console.log("get value befor update",myhashmap.get('hassan'))
 
@@ -153,6 +172,6 @@ class Hashmap {
 // console.log(myhashmap.keys());  
 
 // //contains
-// console.log(myhashmap.contains('heba'))
+console.log(myhashmap.contains('heba'))
 
 module.exports = Hashmap;

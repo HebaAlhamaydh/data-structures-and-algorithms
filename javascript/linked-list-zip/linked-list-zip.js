@@ -5,7 +5,7 @@ class LinkedList {
         this.head = null;
        
     }
-  
+  ////zip two linked list////
     zipLists(list1, list2){
         let zip = new LinkedList();
         let current1=list1.head;
