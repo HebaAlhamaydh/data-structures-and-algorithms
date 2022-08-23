@@ -103,7 +103,7 @@ class LinkedList {
             }
          return bool   
     }
-    /// Add a node at the end
+    /// Add a node at the end o linked list
     append(value) {
         const newNode = new Node(value);
         if (!this.head) {
@@ -131,7 +131,6 @@ class LinkedList {
         }
         return str + "NULL";
     }
-
 
 }
 module.exports = LinkedList;
