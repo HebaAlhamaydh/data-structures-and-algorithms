@@ -66,3 +66,7 @@ To run your tests
 [Merge Sort](./javascript/merge-sort/README.md)
 ## Link to the  Code Challenge: Class 30: 
 [Hash Table ](./javascript/hashTable/README.md)
+## Link to the  Code Challenge: Class 31: 
+[Hash map repaeted ](./javascript/hash-map-repeated-word/README.md)
+## Link to the  Code Challenge: Class 32: 
+[tree-intersection ](./javascript/treeIntersection/README.md)
