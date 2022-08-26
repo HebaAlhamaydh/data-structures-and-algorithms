@@ -2,6 +2,9 @@
 Find common values in 2 binary trees.
 ## whiteboard
 ![](./whiteboard.png)
+## Note what i did?
+I had create a function called treeintersection that takes two parameters:tree1,tree2. I used preorder method in class BinaryTree
+to traverse through tree1 and tree2 and store the values of their nodes inside array called btree1 and btree2 respectively. I created myhashmap and traverse through value of tree1 and hash them by set method.I traversed through values of tee2 and check if these values inside myhashmap so push them in resultArray when I finished looping I returned the resultArray
 ## Approach & Efficiency
 The big O => O(n^2) time.recursion funtion
 
