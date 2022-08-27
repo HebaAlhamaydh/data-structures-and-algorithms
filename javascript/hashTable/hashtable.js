@@ -135,8 +135,10 @@ class Hashmap {
     //  keys(){
     //     let arr=[]
     //     this.map.forEach((element)=>{
+        ////element is like linkedlist
     //         let currentNode  = element.head
     //         while(currentNode ){
+        ////(value in each node contain)currentNode.value is like {heba:"9000"}
     //            arr.push(Object.keys(currentNode.value))
     //            currentNode=currentNode.next
     //         }
