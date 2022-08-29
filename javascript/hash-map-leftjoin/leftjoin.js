@@ -1,63 +1,46 @@
-"use strict";
-const Hashmap = require("../hashTable/hashtable");
 
-function leftjoin(myHash1,myHash2){
-    if(!myHash1 instanceof Hashmap || !myHash2 instanceof Hashmap) {
-        throw new Error("Illegal Arguments")
-     }
-    let hashTable = new Hashmap(1024);
-    myHash1.map.forEach((k, v) => hashTable.set(k, v));
-    
-    myHash2.map.forEach((element,indx)=>{
-        if (myHash2.contain(hashTable[element]))
-        hashTable.set(element,element)
-        else {
-            hashTable.set(element,null)
+const HashMap = require('./hashtable')
+function leftJoin(hashMap1, hashMap2) {
+    let result = [];
+    let tableValue1;
+    let tableValue2;
+    let key = hashMap1.keys()
+
+    for (let i = 0; i < key.length; i++) {
+
+        tableValue1 = hashMap1.get(key[i][0])
+
+        if (hashMap2.contains(key[i][0])) {
+            tableValue2 = hashMap2.get(key[i][0])
         }
-    })
+        else {
+            tableValue2 = null;
+        }
+        result.push([key[i][0], tableValue1, tableValue2])
+    }
 
-return hashTable
+    return result
 }
 
 
-
-const myhashmap = new Hashmap(10);
-myhashmap.add('heba', '900000');
-myhashmap.add('hassan', '100000');
-myhashmap.add('zayd', '50000');
-myhashmap.add('mouna', '500000');
-myhashmap.add('lareen', '490000');
-myhashmap.add('aws', '450000');
+const Synonyms = new HashMap(1024);
+const Antonyms = new HashMap(1024)
 
 
-const myhashmap2 = new Hashmap(10);
-myhashmap.add('heba', '900000');
-myhashmap.add('hassan', '100000');
-myhashmap.add('zayd', '50000');
-myhashmap.add('mouna', '500000');
-myhashmap.add('lareen', '490000');
+Synonyms.set('diligent', 'employed');
+Synonyms.set('fond', 'enamored');
+Synonyms.set('guide', 'usher');
+Synonyms.set('outfit', 'garb');
+Synonyms.set('wrath', 'anger');
 
-const myhashmap3= new Hashmap(10);
+////////////////////////////////
+Antonyms.set('diligent', 'idle');
+Antonyms.set('fond', 'averse');
+Antonyms.set('guide', 'follow');
+Antonyms.set('flow', 'jam');
+Antonyms.set('wrath', 'delight');
 
-// //get value befor update
-// console.log("get value befor update",myhashmap.get('hassan'))
 
+console.log(leftJoin(Synonyms, Antonyms))
 
-
-// //set 
-// myhashmap.set('hassan','10055000')
-
-// ////get the value after updated
-// console.log("get value after update",myhashmap.get('hassan'))
-
-// //print
-// myhashmap.map.forEach((ll) => {
-//     console.log(ll.print());  
-// })
-// // print keys
-// console.log(myhashmap.keys());  
-
-// //contains
-// console.log(myhashmap.contains('heba'))
-console.log(myhashmap3.leftjoin(myhashmap,myhashmap2));
-module.exports =leftjoin;
+module.exports = { HashMap, leftJoin }
