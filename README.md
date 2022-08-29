@@ -70,3 +70,5 @@ To run your tests
 [Hash map repaeted ](./javascript/hash-map-repeated-word/README.md)
 ## Link to the  Code Challenge: Class 32: 
 [tree-intersection ](./javascript/treeIntersection/README.md)
+## Link to the  Code Challenge: Class 3: 
+[hash-map-leftjoin](./javascript/hash-map-leftjoin/README.md)
