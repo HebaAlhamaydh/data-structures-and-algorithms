@@ -147,14 +147,14 @@ class Hashmap {
     // }
 
 }
-const myhashmap = new Hashmap(10);
-myhashmap.add('heba', '900000');
-myhashmap.add('hassan', '100000');
-myhashmap.add('zayd', '50000');
-myhashmap.add('mouna', '500000');
-myhashmap.add('lareen', '490000');
-myhashmap.add('aws', '450000');
-myhashmap.add('aws', '411150000');
+// const myhashmap = new Hashmap(10);
+// myhashmap.add('heba', '900000');
+// myhashmap.add('hassan', '100000');
+// myhashmap.add('zayd', '50000');
+// myhashmap.add('mouna', '500000');
+// myhashmap.add('lareen', '490000');
+// myhashmap.add('aws', '450000');
+// myhashmap.add('aws', '411150000');
 // //get value befor update
 // console.log("get value befor update",myhashmap.get('hassan'))
 
@@ -174,6 +174,6 @@ myhashmap.add('aws', '411150000');
 // console.log(myhashmap.keys());  
 
 // //contains
-console.log(myhashmap.contains('heba'))
+// console.log(myhashmap.contains('heba'))
 
 module.exports = Hashmap;
