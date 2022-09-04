@@ -72,3 +72,5 @@ To run your tests
 [tree-intersection ](./javascript/treeIntersection/README.md)
 ## Link to the  Code Challenge: Class 3: 
 [hash-map-leftjoin](./javascript/hash-map-leftjoin/README.md)
+## Link to the  Code Challenge: Class : 
+[breadth-first-graph](./javascript/graph/README.md)
