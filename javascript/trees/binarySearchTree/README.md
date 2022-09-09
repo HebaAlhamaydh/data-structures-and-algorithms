@@ -26,9 +26,8 @@ Big O for inOrder is O(n)
 
 Big O for postOrder is O(n)
 
-Big O for add is O(n)
-
-Big O for contains is O(log n)
+For add(value) and contains(value) functions, we needed O(log(n)) as a time complexity because inserting and searching in a Binary Search Tree depends on the tree's height which equals to log(n).
+The Big O space complexity of a BST search would be O(1). During a search, we are not allocating any additional space.
 ## Whiteboard Process
 ![](./stackGetMax.jpg)
 ## Test

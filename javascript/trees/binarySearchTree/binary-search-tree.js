@@ -62,7 +62,6 @@ class BinarySearchTree extends BinaryTree {
                     } else {
                         current = current.right;
                     }
-                 
                 }
             }
         }
@@ -73,7 +72,8 @@ contains(value){
     let current = this.root;
 
         //  there is a node to search
-        while (! found && current) {
+        while (current) {
+           
             // if the value is less than the current value go left
             if (value <current.value) {
                 current = current.left;
@@ -89,7 +89,8 @@ contains(value){
         }
         return found;
     }
-
 }
+
+
 
 module.exports = BinarySearchTree;
